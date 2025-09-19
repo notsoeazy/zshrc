@@ -67,9 +67,16 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:mv:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:cp:*' fzf-preview 'ls --color $realpath'
 
-# fzf Keybindings 
-# Modify it depending on where the fzf doc is located
-source "/usr/share/doc/fzf/examples/key-bindings.zsh"
+# fzf keybindings & completion (Arch + Ubuntu)
+if [[ -f /usr/share/fzf/key-bindings.zsh ]]; then
+  # Arch Linux (installed using pacman -S fzf)
+  source /usr/share/fzf/key-bindings.zsh
+  source /usr/share/fzf/completion.zsh
+elif [[ -f /usr/share/doc/fzf/examples/key-bindings.zsh ]]; then
+  # Ubuntu/Debian (installed using apt install fzf)
+  source /usr/share/doc/fzf/examples/key-bindings.zsh
+  source /usr/share/doc/fzf/examples/completion.zsh
+fi
 
 # Aliases
 alias ls='ls --color'
