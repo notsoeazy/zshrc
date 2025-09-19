@@ -28,7 +28,7 @@ Logout and login for it to take effect.
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/zshrc.git
+   git clone https://github.com/notsoeazy/zshrc.git
    cd zshrc
    ```
 2. Move or copy the `.zshrc` file to your home directory:
