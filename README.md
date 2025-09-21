@@ -31,9 +31,9 @@ Logout and login for it to take effect.
    git clone https://github.com/notsoeazy/zshrc.git
    cd zshrc
    ```
-2. Move or copy the `.zshrc` file to your home directory:
+2. Copy the `.zshrc` file to your home directory:
     ```bash
-    mv ./.zshrc ~/
+    cp ./.zshrc ~/
     ```
 3. Open a new terminal to initialize the setup.
 
@@ -48,7 +48,7 @@ Run `p10k cofigure` to customize the look and feel.
 4. **Previews** `cd` `cp` `mv`
 
 ### Transfer environment variables / PATH exports
-If you have custom settings in your old ~/.bashrc or ~/.bash_profile (e.g. for Ruby, Go, MIME types, etc.), move them into your Zsh config `.zshrc`. For example:
+If you have custom settings in your old ~/.bashrc (e.g. for Ruby, Go, MIME types, etc.), move them into your Zsh config `.zshrc`. For example:
 
 ```bash
 # Ruby
