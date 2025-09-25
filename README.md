@@ -4,21 +4,22 @@ This repository contains my personal **Zsh configuration**, based on the [zensh]
 
 ## Prerequisites
 
-Before installing, make sure you have:
-
-- `zsh`
-- `fzf`
-
-### Ubuntu
-```bash
-sudo apt install zsh
-sudo apt install fzf
-```
-### Arch
-```bash
-sudo pacman -S zsh
-sudo pacman -S fzf
-```
+> [!NOTE]
+> Before installing, make sure you have:
+>
+> - `zsh`
+> - `fzf`
+>
+> ### Ubuntu
+> ```bash
+> sudo apt install zsh
+> sudo apt install fzf
+> ```
+> ### Arch
+> ```bash
+> sudo pacman -S zsh
+> sudo pacman -S fzf
+> ```
 ### Make zsh default shell
 ```bash
 sudo chsh -s $(which zsh)
