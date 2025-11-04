@@ -22,10 +22,24 @@ This repository contains my personal **Zsh configuration**, based on the [zensh]
 > ```
 ### Make zsh default shell
 ```bash
-sudo chsh -s $(which zsh)
+chsh -s $(which zsh)
 ```
-Logout and login for it to take effect.
+
+### Install Nerd Fonts
+```bash
+sudo apt install fonts-jetbrains-mono
+```
+
+### Run zsh
+```bash
+zsh
+```
+
+After Logout and login zsh will be the default terminal.
+
 ## Installation
+
+Copy the contents of `.zshrc` from this repo or do the following:
 
 1. Clone this repository:
    ```bash
@@ -40,7 +54,8 @@ Logout and login for it to take effect.
 
 ## Post-installation
 
-Run `p10k cofigure` to customize the look and feel.
+1. Run `p10k configure` to customize the look and feel.
+2. Copy your `.bash_history` to `zsh_history`
 
 ### Features / Keybinds
 1. **History Search** `CTRL+R`
